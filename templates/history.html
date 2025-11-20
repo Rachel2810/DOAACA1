@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+{% block content %}
+
+<h2>Prediction History</h2>
+
+<table>
+    <tr>
+        <th>ID</th>
+        <th>Feature1</th>
+        <th>Feature2</th>
+        <th>Feature3</th>
+        <th>Prediction</th>
+        <th>User</th>
+        <th>Timestamp</th>
+    </tr>
+
+    {% for row in rows %}
+    <tr>
+        {% for col in row %}
+        <td>{{ col }}</td>
+        {% endfor %}
+    </tr>
+    {% endfor %}
+</table>
+
+{% endblock %}
