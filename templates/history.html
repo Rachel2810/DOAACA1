@@ -41,7 +41,7 @@
         <tbody>
             {% for row in rows %}
             <tr>
-                <td>{{ row["created_abrat"] | format_datetime }}</td>
+                <td>{{ row["created_at"] | format_datetime }}</td>
                 <td>{{ row["username"] }}</td>
                 <td>{{ row["area"] | clean }}</td>
                 <td>{{ row["beds"] | clean }}</td>
